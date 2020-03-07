@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script>
+$(function(){
+$(window).scroll(function(){
+            var somma = 20;// i px dopo i quali parte tutto
+            if($(this).scrollTop()>=somma){
+            $("#change").css({
+                "background-color": "Black",
+                "color":"cornflowerblue",
+                            });
+            }else if ($(this).scrollTop()<somma){ // se si rientra sotto i px indicti..
+             $("#change").css({
+                 "background-color": " transparent",
+                 "color":"Silver",
+                            });
+            }
+        });
+    });
+    </script>
+    <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="Style.css">
+    <title>Tommaso's experience</title>
+</head>
+<body>
+    <header >
+        <h1 id="change"> MY RESUME 2020</h1>
+    </header>
+    <section>
+        <div>
+            <ul class="Timeline">
+                <li class="event enter dl1">
+                    <p>04-2018</p>
+                    <h2>Field application engineer</h2>
+                    <h3>Gefran Soluzioni</h3>
+                    <p1>Software development of PLC, drive and scada (Siemens)<br />Test and commissioning of extruders and winders for plastic film</p1>
+                </li>
+                <li class="event enter dl2">
+                    <p>12-2017</p>
+                    <h2>Electrical designer</h2>
+                    <h3>Terna rete italia </h3>
+                    <p1>Designed and implemented security, protection and control system for power plants.</p1>
+                </li>
+                <li class="event enter dl3">
+                    <p>09-2016</p>
+                    <h2>Software engineer </h2>
+                    <h3>Automation solutions </h3>
+                    <p1>Worldwide commissioning and start-up of industrial plants<br /> plc programming(Siemens, Rockwell)</p1>
+                </li>
+                <li class="event enter dl4">
+                    <p>08-2016</p>
+                    <h2>Mechanical designer</h2>
+                    <h3>Legnano Teknoelectic Company </h3>
+                    <p1>Designed carpentry and core of	current	transformers</p1>
+                </li>
+                <li class="event enter dl5">
+                    <h4>Education</h4>
+                    <h3>I.T.I.S. Antonio Bernocchi</h3>
+                    <p1>07-2016 - High school diploma in electrical design and industrial automation</p1>
+                </li>
+                <li class="event enter dl6">
+                    <h4>About me</h4>
+                    <p1>
+                        Field application engineer with 3 years of experience in PLC and scada programming, i'm
+                        passionate about technology, robots and web development.
+                        Looking for a dynamic and stimulating work environment for personal and professional growth.
+                    </p1>
+                </li>
+                <li class="event enter dl7">
+                    <h4>Interests and hobbies</h4>
+                    <ul class="insideList">
+                        <li><p1>Technology: plc, robot and much more</p1></li>
+                        <li><p1>Web: back-end development</p1></li>
+                        <li><p1>Sport: basketball player</p1></li>
+                        <li><p1>General: worldwide travel, sports cars</p1></li>
+                    </ul>
+                </li>
+                <li class="event enter dl8">
+                    <h4> Experience page</h4>
+                    <p1>
+                        I am learning on my own how to create websites, I made this Experience page by myself using: HTML, CSS,  JS.
+                        Give me a feedback!
+                    </p1>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <div class="footer">made by <span>Tommy</span></div>
+</body>
+</html>
